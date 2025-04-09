@@ -1,134 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-<link rel="stylesheet" href="style.css">
-<script src="script.js"></script>
-<title>Hyper Rents</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Hyper Rents</title>
 </head>
 <body>
-<!-- Navbar -->
-<div class="navbar">
-<div class="nav-left">
-<a href="login.html">LOG IN</a>
-<a href="#">VEHICLES</a>
-<a href="#">RENTALS</a>
-<a href="#">CONTACT US</a> 
-</div>
-<div class="logo">HYPER RENTS</div>
-<div class="nav-right">
-<span>12:00</span>
-<span>👤</span>
-<span>☰</span>
-</div>
-</div>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav-left">
+      <a href="#">VEHICLES</a>
+      <a href="#">RENTALS</a>
+      <a href="#contact">CONTACT US</a>
+    </div>
+    <div class="logo">HYPER RENTS</div>
+    <div class="nav-right">
+      <div class="icons">
+        <!-- Time Display -->
+        <div class="time" id="current-time"></div>
+        <img src="/HYPER RENTS/ITHCI ASSETS/profile.svg" alt="Profile" class="profile-icon">
+        <img src="/HYPER RENTS/ITHCI ASSETS/burger.svg" alt="Menu" class="hamburger-icon" onclick="toggleMenu();">
+      </div>
+    </div>
+  </div>
 
-<!-- Hero Section -->
-<div class="main-banner">
-<img src="/HYPER RENTS/ITHCI ASSETS/AE86.jpg" alt="AE86 Car">
-<div class="banner-content">
-<p>2023</p>
-<h2>ICONIC AE86</h2>
-<p>HYPE THE RIDE<br>MAKE IT<br>MEMORABLE</p>
-<a href="#" class="rent-button">RENT NOW</a>
-</div>
-</div>
+ 
 
-<!-- Showcase Section -->
-<h2 class="section-title">SHOWCASES</h2>
-<div class="car-grid">
-  <!-- CAR CARD START -->
-  <div class="car-card">
-    <h3>TOYOTA GR86</h3>
-    <img class="car" src="/HYPER RENTS/ITHCI ASSETS/1.svg" alt="Toyota GR86">
-    <div class="specs">
-      <div class="bold">YEAR</div><div>2024</div>
-      <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="EU Flag"></div><div></div>
-      <div class="bold">Engine</div><div>2.4L</div>
-      <div class="bold">0-100 KM/h</div><div>6.1 S</div>
-      <div class="bold">Power</div><div>228 HP</div>
-      <div class="bold">Top Speed</div><div>216 KM/h</div>
-      <div class="bold">Torque</div><div>250 NM</div>
+  <!-- Hero Section -->
+  <div class="main-banner">
+    <img src="/HYPER RENTS/ITHCI ASSETS/AE86.jpg" alt="AE86 Car">
+    <div class="banner-content">
+      <p>2023</p>
+      <h2>ICONIC AE86</h2>
+      <p>HYPE THE RIDE MAKE IT<br>MEMORABLE</p>
+      <a href="#" class="rent-button">RENT NOW</a>
     </div>
   </div>
-  <div class="car-card">
-    <h3>TOYOTA GR86</h3>
-    <img class="car" src="/HYPER RENTS/ITHCI ASSETS/2.svg" alt="Toyota GR86">
-    <div class="specs">
-      <div class="bold">YEAR</div><div>2024</div>
-      <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="EU Flag"></div><div></div>
-      <div class="bold">Engine</div><div>2.4L</div>
-      <div class="bold">0-100 KM/h</div><div>6.1 S</div>
-      <div class="bold">Power</div><div>228 HP</div>
-      <div class="bold">Top Speed</div><div>216 KM/h</div>
-      <div class="bold">Torque</div><div>250 NM</div>
+
+  <!-- Showcase Section -->
+  <h2 class="section-title">SHOWCASES</h2>
+  <div class="car-grid">
+    <div class="car-card">
+      <h3>TOYOTA GR86</h3>
+      <img class="car" src="/HYPER RENTS/ITHCI ASSETS/1.svg" alt="Toyota GR86">
+      <div class="specs">
+        <div class="bold">YEAR</div><div>2024</div>
+        <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="EU Flag"></div>
+        <div class="bold">Engine</div><div>2.4L</div>
+        <div class="bold">0-100 KM/h</div><div>6.1 S</div>
+        <div class="bold">Power</div><div>228 HP</div>
+        <div class="bold">Top Speed</div><div>216 KM/h</div>
+        <div class="bold">Torque</div><div>250 NM</div>
+      </div>
     </div>
-  </div>
-  <div class="car-card">
-    <h3>TOYOTA GR86</h3>
-    <img class="car" src="/HYPER RENTS/ITHCI ASSETS/3.svg" alt="Toyota GR86">
-    <div class="specs">
-      <div class="bold">YEAR</div><div>2024</div>
-      <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="EU Flag"></div><div></div>
-      <div class="bold">Engine</div><div>2.4L</div>
-      <div class="bold">0-100 KM/h</div><div>6.1 S</div>
-      <div class="bold">Power</div><div>228 HP</div>
-      <div class="bold">Top Speed</div><div>216 KM/h</div>
-      <div class="bold">Torque</div><div>250 NM</div>
+    <div class="car-card">
+      <h3>TOYOTA GR86</h3>
+      <img class="car" src="/HYPER RENTS/ITHCI ASSETS/1.svg" alt="Toyota GR86">
+      <div class="specs">
+        <div class="bold">YEAR</div><div>2024</div>
+        <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="EU Flag"></div>
+        <div class="bold">Engine</div><div>2.4L</div>
+        <div class="bold">0-100 KM/h</div><div>6.1 S</div>
+        <div class="bold">Power</div><div>228 HP</div>
+        <div class="bold">Top Speed</div><div>216 KM/h</div>
+        <div class="bold">Torque</div><div>250 NM</div>
+      </div>
     </div>
-  </div>
-  <div class="car-card">
-    <h3>TOYOTA GR86</h3>
-    <img class="car" src="/HYPER RENTS/ITHCI ASSETS/4.svg" alt="Toyota GR86">
-    <div class="specs">
-      <div class="bold">YEAR</div><div>2024</div>
-      <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="EU Flag"></div><div></div>
-      <div class="bold">Engine</div><div>2.4L</div>
-      <div class="bold">0-100 KM/h</div><div>6.1 S</div>
-      <div class="bold">Power</div><div>228 HP</div>
-      <div class="bold">Top Speed</div><div>216 KM/h</div>
-      <div class="bold">Torque</div><div>250 NM</div>
+    <div class="car-card">
+      <h3>TOYOTA GR86</h3>
+      <img class="car" src="/HYPER RENTS/ITHCI ASSETS/1.svg" alt="Toyota GR86">
+      <div class="specs">
+        <div class="bold">YEAR</div><div>2024</div>
+        <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="EU Flag"></div>
+        <div class="bold">Engine</div><div>2.4L</div>
+        <div class="bold">0-100 KM/h</div><div>6.1 S</div>
+        <div class="bold">Power</div><div>228 HP</div>
+        <div class="bold">Top Speed</div><div>216 KM/h</div>
+        <div class="bold">Torque</div><div>250 NM</div>
+      </div>
     </div>
+    
+    <!-- Add more car cards as needed -->
   </div>
-  <div class="car-card">
-    <h3>TOYOTA GR86</h3>
-    <img class="car" src="/HYPER RENTS/ITHCI ASSETS/5.svg" alt="Toyota GR86">
-    <div class="specs">
-      <div class="bold">YEAR</div><div>2024</div>
-      <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="EU Flag"></div><div></div>
-      <div class="bold">Engine</div><div>2.4L</div>
-      <div class="bold">0-100 KM/h</div><div>6.1 S</div>
-      <div class="bold">Power</div><div>228 HP</div>
-      <div class="bold">Top Speed</div><div>216 KM/h</div>
-      <div class="bold">Torque</div><div>250 NM</div>
-    </div>
-  </div>
-  <div class="car-card">
-    <h3>TOYOTA GR86</h3>
-    <img class="car" src="/HYPER RENTS/ITHCI ASSETS/6.svg" alt="Toyota GR86">
-    <div class="specs">
-      <div class="bold">YEAR</div><div>2024</div>
-      <div><img class="flag" src="https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg" alt="EU Flag"></div><div></div>
-      <div class="bold">Engine</div><div>2.4L</div>
-      <div class="bold">0-100 KM/h</div><div>6.1 S</div>
-      <div class="bold">Power</div><div>228 HP</div>
-      <div class="bold">Top Speed</div><div>216 KM/h</div>
-      <div class="bold">Torque</div><div>250 NM</div>
-    </div>
-  </div>
-  <!-- Repeat as needed -->
-  <!-- COPY AND PASTE .car-card TO FILL THE GRID -->
-</div>
-<footer class="footer">
-  <div class="container">
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
       <h2>TURN HEADS. LEAVE A MARK</h2>
       <p><strong>CONTACT US</strong></p>
       <p>PHONE: 0999-123-4567</p>
       <p>EMAIL: HYPERENTS@GMAIL.COM</p>
       <p>LOCATION: BRGY. MANG JUAN</p>
       <p class="copyright">© 2025 Hyper Rents. All rights reserved.</p>
-  </div>
-</footer>
-
+    </div>
+  </footer>
 </body>
 </html>

@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="loginstyle.css">
+    <script src="loginscript.js"></script>
   <meta charset="UTF-8">
   <title>Sign Up</title>
 
@@ -15,10 +16,12 @@
 
   <!-- Login box -->
   <div class="login-box overlay-border">
-    <h2>SIGN UP</h2>
-    <input type="email" placeholder="EMAIL">
-    <input type="password" placeholder="PASSWORD">
-    <button>CREATE ACCOUNT</button>
+    <!-- Inside .login-box -->
+<h2>SIGN UP</h2>
+<input type="email" placeholder="EMAIL" id="email" required>
+<input type="password" placeholder="PASSWORD" id="password" required>
+<button id="signup-btn">CREATE ACCOUNT</button>
+
   </div>
 
 </body>

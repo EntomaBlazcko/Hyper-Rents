@@ -1,3 +1,81 @@
+/* Body Styles */
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: #f4f4f4;
+  color: #000;
+  line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative; /* Allow positioning of elements like the time */
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left a {
+  text-decoration: none;
+  color: #000;
+  margin-right: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.nav-left a:hover {
+  color:  gray;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  text-decoration: underline;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-right .icons {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.profile-icon, .hamburger-icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* Time Display */
+.time {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-left: auto; /* Push it to the right */
+  margin-right: 1.5rem; /* Add spacing between time and icons */
+}
+
+
 /* Filters Section */
 .filters {
     padding: 20px;
@@ -54,6 +132,89 @@
   .load-more:hover {
     background-color: gray;
   }
+
+  /* Showcase Section */
+h2.section-title {
+  margin: 40px 30px;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.car-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.car-card:hover {
+  transform: translateY(-10px);
+  border-color: #000;
+  box-shadow: 1px 6px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+
+}
+
+.car-card h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.car-card img.car {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.specs {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.flag {
+  width: 24px;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #222;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.footer p {
+  font-size: 1rem;
+  margin: 5px 0;
+}
+
+.copyright {
+  font-size: 0.8rem;
+  margin-top: 20px;
+  color: #aaa;
+}
   
   /* View Details Button */
   .view-details {
